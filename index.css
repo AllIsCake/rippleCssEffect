@@ -49,9 +49,26 @@ button {
   }
   
   body {
+    flex-direction: column;
     align-items:center;
     display:flex;
     height:100vh;
-    justify-content:center;
+    justify-content: space-around;
     margin:0;
   }
+
+/*box styles*/ 
+
+.box {
+    animation: Opasity 2s infinite;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border-radius: 5px;
+}
+
+@keyframes Opasity {
+    0% {width: 200px; height: 200px;}
+    50% {width: 210px; height: 210px;}
+    100% {width: 200px; height: 200px;}
+}
